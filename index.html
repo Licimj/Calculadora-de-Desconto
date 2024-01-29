@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Calculadora de Desconto </title>
+</head>
+<body>
+
+    <form id="form">
+        <h1> Calculadora de Desconto </h1>
+        <div class="group">
+            
+        
+        <div class="po">
+        <label for=""> Desconto</label>
+        <input type="number" name="number" id="porcent" placeholder="%" min="0" max="10000">
+        </div>
+
+        <div class="po">
+        <label for=""> Valor </label>
+        <input type="text" name="number" id="numero" pattern="[0-9]+([,\\.][0-9]+)?" placeholder="R$" min="0" max="10000">
+        </div>
+
+        <div class="po">
+        <label for="">Resultado </label>
+        <input type="text" name="text" placeholder="R$" id="resul">
+        </div>
+        </div>
+
+        
+       <div class="button">
+        <button onclick="valuePorcent()"> Calcular </button>
+        <button onclick="clearFild()" type="reset"> Limpar </button>
+        </div>
+      
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
